@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" class="frontpage">
+    <header>
+        
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="index.js">
+
+        </script>
+
+        <title> Techno </title>
+
+        <nav id="box" class="bar">
+            <img style="margin-left: 150px;"src="C:\Users\joman\Desktop\fullstack\platform\pictures\logo1.webp">
+            <h4> Techno</h4>
+            <a href="aboutus.html">
+                <h4>About Us</h4>
+            </a>
+            <a href="bug.html">
+                <h4>Report a Bug</h4>
+            </a>
+            <a href="cart.html">
+                <h4>Cart</h4>
+            </a>
+        </nav>
+        <section class="money">
+            <textarea rows="1" cols="20" id="money" disabled>    20,000</textarea>
+        </section>
+    </header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("button").hover(function(){
+            (this).innerHTML = "add to cart";}, function(){
+            (this).innerHTML = "+";  
+            });
+        });
+    
+    </script>
+    <body>
+        <div class="parent">
+            <section class="child">
+                <a href="https://www.amazon.com/s/ref=s9_acss_bw_cg_purimil_2b1_w?k=oculus&i=electronics-intl-ship&ref=nb_sb_noss&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-5&pf_rd_r=BWVBV74955GKFNNYECF3&pf_rd_t=101&pf_rd_p=434db2ed-6d53-4c59-b173-e8cd550a2e4f&pf_rd_i=23508887011">
+                    <img style="margin-top: 40px;" src="C:\Users\joman\Desktop\fullstack\platform\pictures\oculus.webp">
+                </a>
+                
+                <h4 class="description"><span><h2 class="title">Oculus</h2></span> is a virtual reality (VR) headset <br/>developed by Oculus, a division <br/>of Facebook released on May 21, 2019.<span class="flex"> <h5 class="price">300$</h5> <button onclick="add('Oculus','300$')" class="cart" type="button" >+</button></span></h4>
+            </section>
+            <section class="child">
+                <a href="https://www.amazon.com/s/ref=s9_acss_bw_cg_purimil_3a1_w?k=playstation+consoles&rh=n%3A294915&ref=nb_sb_noss&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-5&pf_rd_r=7H6ANEBGR9H9PM495MVR&pf_rd_t=101&pf_rd_p=434db2ed-6d53-4c59-b173-e8cd550a2e4f&pf_rd_i=23508887011">
+                    <img src="C:\Users\joman\Desktop\fullstack\platform\pictures\ps.jpg">
+                </a>
+
+                
+                <h4 class="description"><span><h2 class="title">PlayStation</h2> </span>is a home video game console developed <br />by Sony Computer Entertainment. <br/>It was released in Japan on 3 December 1994.<span class="flex"> <h5 class="price">300$</h5> <button onclick="add('PlayStation','300$')"class="cart" type="button" >+</button></span></h4>
+            </section>
+
+            <section class="child">
+
+                <a href="https://www.amazon.com/s/ref=s9_acss_bw_cg_purimil_2c1_w?k=xbox+consoles&rh=n%3A720022&ref=nb_sb_noss&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-5&pf_rd_r=7H6ANEBGR9H9PM495MVR&pf_rd_t=101&pf_rd_p=434db2ed-6d53-4c59-b173-e8cd550a2e4f&pf_rd_i=23508887011">
+                    <img src="C:\Users\joman\Desktop\fullstack\platform\pictures\xbox.png">
+                </a>
+
+                <h4><span><h2>Xbox</h2></span> is a video gaming brand owned by Microsoft.<br/> The brand consists of five video game consoles,<br/> as well as games, streaming services .<span class="flex"> <h5 class="price">300$</h5> <button onclick="add('Xbox','300$')"class="cart" type="button" >+</button></span></h4>
+
+            </section>
+
+            <section class="child">    
+                <a href="https://www.amazon.com/s/ref=s9_acss_bw_cg_purimil_2d1_w?k=gaming+laptops&ref=nb_sb_noss&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-5&pf_rd_r=7H6ANEBGR9H9PM495MVR&pf_rd_t=101&pf_rd_p=434db2ed-6d53-4c59-b173-e8cd550a2e4f&pf_rd_i=23508887011">
+                    <img src="C:\Users\joman\Desktop\fullstack\platform\pictures\laptop.png">
+                </a>
+
+                <h4><span><h2>Laptop</h2></span> is a combination of all of the input and output capabilities <br/>and components of a desktop computer, including its <br/>display screen, keyboard, speakers, data storage and pointing devices<br/>, with a processor and operating system into a smaller device.<span class="flex"> <h5 class="price">300$</h5> <button onclick="add('Laptop','300$')"class="cart" type="button" >+</button></span></h4>
+                <div>
+                
+                </div>
+            </section>
+
+            <section class="child">
+                <a href="https://www.amazon.com/s/ref=s9_acss_bw_cg_purimil_2a1_w?k=nintendo&i=videogames-intl-ship&ref=nb_sb_noss&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-5&pf_rd_r=7H6ANEBGR9H9PM495MVR&pf_rd_t=101&pf_rd_p=434db2ed-6d53-4c59-b173-e8cd550a2e4f&pf_rd_i=23508887011">
+                    <img src="C:\Users\joman\Desktop\fullstack\platform\pictures\nintendo.png" >
+                </a>
+                
+                <h4><span><h2>Nintendo</h2></span>is a hybrid video game console, consisting of a console unit,<br/> a dock, and two Joy-Con controllers. Although it is a hybrid console,<br/> Nintendo classifies it as a home console that you can take with you on the go.<span class="flex"> <h5 class="price">300$</h5> <button onclick="add('Nintendo','300$')" class="cart" type="button" >+</button></span></h4>
+            </section>
+
+            <section class="child">
+                <a href="https://www.amazon.com/s/ref=s9_acss_bw_cg_purimil_3c1_w?k=gaming+headsets&ref=nb_sb_noss_2&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-5&pf_rd_r=7H6ANEBGR9H9PM495MVR&pf_rd_t=101&pf_rd_p=434db2ed-6d53-4c59-b173-e8cd550a2e4f&pf_rd_i=23508887011">
+                    <img src="C:\Users\joman\Desktop\fullstack\platform\pictures\headset.jpg" >
+                </a>
+
+                <h4><span><h2>Headset</h2></span> connect over a telephone or to a computer, allowing the <br/> user  to speak and listen while keeping both hands free.<br/>they are commonly used in customer service and technical support centers.<span class="flex"> <h5 class="price">300$</h5> <button onclick="add('Headset','300$')" class="cart" type="button" >+</button></span></h4>
+
+            </section>
+
+            <section class="child">
+                <a href="https://www.amazon.com/s/ref=s9_acss_bw_cg_purimil_2e1_w?k=gaming+controller&ref=nb_sb_noss_1&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-5&pf_rd_r=7H6ANEBGR9H9PM495MVR&pf_rd_t=101&pf_rd_p=434db2ed-6d53-4c59-b173-e8cd550a2e4f&pf_rd_i=23508887011">
+                    <img src="C:\Users\joman\Desktop\fullstack\platform\pictures\controller.png" >
+                </a>
+                
+                <h4><span><h2>Controller</h2></span>is responsible for controlling the way that a user<br/> interacts with an MVC application. A controller <br/>contains the flow control logic for an ASP.NET MVC application.<span class="flex"> <h5 class="price">300$</h5> <button onclick="add('Controller','300$')" class="cart" type="button" >+</button></span></h4>
+            </section>
+                
+            <section class="child">
+                <a href="https://www.amazon.com/s/ref=s9_acss_bw_cg_purimil_3d1_w?k=gaming+keyboard&ref=nb_sb_noss_1&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=merchandised-search-5&pf_rd_r=7H6ANEBGR9H9PM495MVR&pf_rd_t=101&pf_rd_p=434db2ed-6d53-4c59-b173-e8cd550a2e4f&pf_rd_i=23508887011">
+                    <img src="C:\Users\joman\Desktop\fullstack\platform\pictures\keyboard.jpg">
+                </a>
+                
+                <h4><span><h2>Keyboard</h2></span>is a peripheral input device modeled after the typewriter<br/> keyboard which uses an arrangement of buttons or keys <br/>to act as mechanical levers or electronic switches.<span class="flex"> <h5 class="price">300$</h5> <button onclick="add('Keyboard','300$')" class="cart" type="button" >+</button></span></h4>
+            </section>
+        </div>
+
+    </body>
+</html>

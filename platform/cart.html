@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" id="cart">
+    <header>
+        <title> Techno</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="index.js"></script>
+
+        <h1>My Cart</h1>
+        <section class="money" style="margin-bottom: 300px; margin-left: 100px;">
+            
+            <textarea rows="1" cols="20" id="moneys" disabled>    20,000</textarea>
+        </section>
+<script>
+    //i had to redefine it as the variable clears whenever the page changes it will of course be changed once there is a database
+    thecart=['Oculus', '300$', 'PlayStation', '300$', 'Nintendo', '300$'];
+    if (thecart.length > 0){
+            for(let i=0; i <= thecart.length-1 ; i+= 2) {
+                document.write("<h3>",thecart[i],"  ",thecart[i+1],"</h3>");
+                console.log(thecart[i],thecart[i+1]);
+            };
+        }
+    else{
+
+        document.write("<h2>you've got nothing in your cart</h2>");
+        console.log("nothing in the cart");
+    }
+    /* this is also a function i made but it needs a database to be implemented it is suppose to purchase the things in your cart and lower your money 
+    function purchase(){
+        let price= 0;
+        for(let i=1; i != thecart.lengths+4; i+2){
+            price += thecart[i];
+            console.log(price);
+        };
+        document.getElementById('money').innerHTML=20000 - price;
+;        console.log(20000-price);
+    }*/
+</script>
+
+    </header>
+    <body>
+        <button class="btn" >Purchase</button>
+        <a href="frontpage.html"> 
+        <button class="btn">Back</button></a>
+    </body>
+  
+
+</html>
